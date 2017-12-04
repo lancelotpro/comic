@@ -1,0 +1,23 @@
+/**
+	调整导航条的标题字体
+*/
+.navbar-header .navbar-brand a {
+	color: #FFF;
+}
+
+.carousel-inner .item img {
+	width: 100%;
+}
+
+.sep {
+	margin-bottom: 15px;
+}
+
+.footer {
+	height: 50px;
+	background-color: #101010;
+	border-radius: 5px;
+	color: #fff;
+	padding: 0 10px;
+	line-height: 50px;
+}

@@ -11,10 +11,11 @@ $(function (){
 
 	//KindEditor
 	var editor;
+	var uploadUrl = $("textarea[name='content']").attr("accesskey");
 	KindEditor.ready(function(K) {
 		editor = K.create('textarea[name="content"]', {
-			resizeType : 0,
-			uploadJson : '../php/upload_json.php',
+			resizeType : 1,
+			uploadJson : uploadUrl,
 			allowPreviewEmoticons : false,
 			items : [
 				'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',

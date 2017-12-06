@@ -13,9 +13,9 @@ $php_path = dirname(__FILE__) . '/';
 $php_url = dirname($_SERVER['PHP_SELF']) . '/';
 
 //文件保存目录路径
-$save_path = $php_path . '__PUBLIC__/attached/';
+$save_path = $php_path . '../attached/';
 //文件保存目录URL
-$save_url = $php_url . '__PUBLIC__/attached/';
+$save_url = $php_url . '../attached/';
 //定义允许上传的文件扩展名
 $ext_arr = array(
 	'image' => array('gif', 'jpg', 'jpeg', 'png', 'bmp'),
@@ -132,8 +132,9 @@ if (empty($_FILES) === false) {
 }
 
 function alert($msg) {
-	header('Content-type: text/html; charset=UTF-8');
-	$json = new Services_JSON();
-	echo $json->encode(array('error' => 1, 'message' => $msg));
+	// header('Content-type: text/html; charset=UTF-8');
+	// $json = new Services_JSON();
+	// echo $json->encode(array('error' => 1, 'message' => $msg));
+	var_dump($msg);
 	exit;
 }

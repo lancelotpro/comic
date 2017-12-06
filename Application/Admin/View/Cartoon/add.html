@@ -1,0 +1,25 @@
+<extend name="Index:index" />
+
+<block name="_right">
+	<div class="page-header">
+		<h3>添加动漫</h3>
+	</div>
+	<form action="{:U('insert')}" method="post">
+		<div class="form-group">
+			<label for="author">作者</label>
+			<input type="text" name="author" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="title">动漫标题</label>
+			<input type="text" name="title" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="content">动漫内容</label>
+			<textarea class="form-control" name="content"></textarea>
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-primary" name="submit" value="提交">
+			<input type="reset" class="btn btn-danger" name="reset" value="重置">
+		</div>
+	</form>
+</block>

@@ -1,0 +1,17 @@
+/**
+	后台首页
+*/
+
+.content {
+	height: 800px;
+
+}
+
+.content .left {
+	height: 100%;
+	border-right: 1px solid #888;
+}
+
+.content .right {
+	height: 100%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动漫项目后台登录</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/admin/login.css">
+	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/bootstrap/js/holder.min.js"></script>
+</head>
+<body>
+	<div class="outer-wrap">
+		<div class="login-panel">
+			<form class="form-horizontal" action="{:U('login')}" method="post">
+			  <div class="form-group">
+			    <label for="username" class="col-sm-2 control-label">用户名</label>
+			    <div class="col-sm-10">
+			      <input type="text" class="form-control" id="username" name="username" placeholder="用户名">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="password" class="col-sm-2 control-label">密码</label>
+			    <div class="col-sm-10">
+			      <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="verifycode" class="col-sm-2 control-label">验证码</label>
+			    <div class="col-sm-10">
+			    	<div class="row">
+			    		<div class="col-sm-9">
+			    			<input type="text" class="form-control" id="verifycode" name="verifycode" placeholder="验证码">	
+			    		</div>
+			    		<div class="col-sm-3">
+			    			<img src="__URL__/get_verify" onclick="this.src='__URL__/get_verify/'+new Date()">
+			    		</div>
+			    	</div>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <button type="submit" class="btn btn-primary">登录</button>
+			    </div>
+			  </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -70,35 +70,24 @@
 
 		<div class="sep"></div>
 		
-		<div class="panel panel-primary">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Title1</h3>
-		  </div>
-		  <div class="panel-body">
-		    	Panel content
-		    	Panel content
-		    	Panel content
-		  </div>
-		  <div class="panel-footer">
-		  		Panel content
-		  </div>
-		</div>
+		<volist name="rows" id="row">
+			<div class="panel panel-primary">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">
+			    	{$row['title']}
+			    </h3>
+			  </div>
+			  <div class="panel-body">
+			    	{:html_entity_decode($row['content'])}
+			  </div>
+			  <div class="panel-footer">
+			  		{$row['author']}
+			  </div>
+			</div>
 
-		<div class="sep"></div>
+			<div class="sep"></div>
+		</volist>
 		
-		<div class="panel panel-primary">
-		  <div class="panel-heading">
-		    <h3 class="panel-title">Title1</h3>
-		  </div>
-		  <div class="panel-body">
-		    	Panel content
-		    	Panel content
-		    	Panel content
-		  </div>
-		  <div class="panel-footer">
-		  		Panel content
-		  </div>
-		</div>
 
 		
 		<div class="footer">
